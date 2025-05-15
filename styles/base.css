@@ -1,0 +1,74 @@
+
+header{
+background-color: navy;
+}
+h1{
+text-align: center;
+padding: 1rem;
+color: white;
+}
+h1 span{
+color: yellow;
+}
+nav ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+padding: 1rem;
+background-color: black;
+}
+nav a{
+color: white;
+text-decoration: none;
+}
+nav a:hover{
+text-decoration: underline;
+}
+main{
+display: grid;
+grid-template-columns: repeat(2,auto);
+justify-content:space-around;
+margin: 0 auto;
+gap: 5rem;
+max-width: 1180px;
+}
+.card{
+border: 1px solid navy;
+border-radius: 1rem 1rem 0 0;
+}
+.dnem img{
+float: right;
+width: 150px;
+}
+.deco, .dnem{
+padding: 1rem;
+}
+.deco img{
+float: left;
+width: 150px;
+margin: 0 .5rem;
+}
+h2{
+text-align: center;
+padding: 1rem;
+}
+.htwo{
+border-bottom: 1px solid gray;
+}
+.headtwo{
+background-color: navy;
+margin: 0;
+color: white;
+border-radius: 1rem 1rem 0 0;
+}
+.ul{
+margin: 10rem 0;
+}
+footer{
+background-color: navy;
+padding: 1.5rem;
+text-align: center;
+color: white;
+margin: 2rem 0;
+}

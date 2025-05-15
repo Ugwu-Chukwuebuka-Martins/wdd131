@@ -1,0 +1,26 @@
+body{
+display: grid;
+grid-template: auto 1fr auto /  auto 1fr auto;
+text-align: center;
+}
+header{
+grid-column: 1/4;
+background-color: lightcoral;
+}
+main{
+grid-column: 2/3;
+background-color: yellow;
+height: 300px;
+}
+.left-sidebar{
+grid-column: 1/2;
+background-color: lightskyblue;
+}
+.right-sidebar{
+grid-column: 3/4;
+background-color: lightgreen;
+}
+footer{
+grid-column: 1/4;
+background-color: lightblue;
+}
