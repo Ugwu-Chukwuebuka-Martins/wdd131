@@ -5,6 +5,7 @@ box-sizing: border-box;
 }
 a{
 text-decoration: none;
+font-family: Tektur;
 }
 body {
 font-family: Roboto, sans-serif;
@@ -23,6 +24,7 @@ padding: 0.5rem;
 color: white;
 font-weight: bolder;
 font-size: xx-large;
+font-family: Tektur;
 }
 .toggle{
 display: flex;
@@ -91,4 +93,5 @@ footer{
 background-color: navy;
 color: white;
 padding: 2rem;
+font-family: Tektur;
 }
