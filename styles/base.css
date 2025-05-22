@@ -1,4 +1,4 @@
-ucm{
+.info{
 text-align: center;
 animation-name: des;
 animation-duration: 2s;
@@ -8,6 +8,7 @@ border-radius: .5rem;
 color: white;
 font-family: Tektur;
 font-weight: bolder;
+width: 350px;
 }
 @keyframes des{
     from{background-color: red;}
