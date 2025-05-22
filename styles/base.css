@@ -9,6 +9,7 @@ color: white;
 font-family: Tektur;
 font-weight: bolder;
 width: 350px;
+display: none;
 }
 @keyframes des{
     from{background-color: red;}
