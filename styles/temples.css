@@ -47,7 +47,7 @@ display: none;
 .navigation a {
 display: block;
 padding: 0.75rem;
-text-align: left;
+text-align: center;
 text-decoration: none;
 color: navy;
 font-weight: 700;
@@ -55,8 +55,8 @@ transition: 0.5s;
 font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 .navigation a:hover,.navigation a:active {
-color: navy;
-background-color: white;
+color: white;
+background-color: red;
 border-radius: 1rem;
 }
 .show li {
