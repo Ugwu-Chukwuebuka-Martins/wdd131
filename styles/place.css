@@ -1,0 +1,91 @@
+*{
+margin: 0;
+}
+header{
+background-color: green;
+font-size: xx-large;
+font-family: Tektur;
+font-weight: bolder;
+color: white;
+text-align: center;
+padding: 2rem;
+}
+main{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+section{
+padding: 2rem;
+}
+section pre{
+padding: .3rem;
+font-size: 15px;
+}
+section span{
+font-weight: bolder;
+}
+section h2{
+text-align: center;
+padding: .5rem;
+}
+footer{
+background-color: green;
+text-align: center;
+padding: 3rem;
+color: white;
+font-weight: bolder;
+font-family: Tektur;
+}
+img{
+width: 100%;
+}
+h2 span{
+display: none;
+}
+.weather-icon{
+text-align: center;
+font-size: 50px;
+padding: 1rem;
+}
+@media screen and (min-width: 500px){
+picture{
+width: 100%;
+height: auto;
+position: relative;
+}
+section{
+position: absolute;
+background-color: white;
+border-radius: 1.5rem;
+border: 2px solid green;
+padding: 1.2rem;
+}
+section pre{
+font-size: 20px;
+}
+.weather-icon{
+display: none;
+}
+h2 span{
+display: inline;
+}
+.h2{
+background-color: green;
+margin-left: -15%;
+text-align: center;
+color: white;
+padding: .7rem;
+border-radius: 1rem 0 0 1rem;
+}
+.left{
+bottom: 40%;
+right: 70%;
+}
+.right{
+top: 60%;
+left: 70%;
+}
+}
