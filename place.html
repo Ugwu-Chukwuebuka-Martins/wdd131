@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width;initial-scale=1">
+<title>place</title>
+<meta name="description" content="place">
+<meta name="author" content="Ugwu Chukwuebuka">
+<link rel="stylesheet" href="styles/place.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+<script defer src="scripts/place.js"></script>
+</head>
+<body>
+<header>
+<h1>Nigeria</h1>
+</header>
+<main>
+<picture>
+<source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+<source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+<img src="images/hero-small.webp" alt="background-image" width="1000" height="700">
+</picture>
+<section class="left">
+<div class="h2">
+<h2>Data</h2>
+</div>
+<p>
+<pre><span>        Area:</span> 923,768 km<sup>2</sup></pre>
+<pre><span>  Population:</span> 236,965,368</pre>
+<pre><span>     Capital:</span> Abuja</pre>
+<pre><span>   Languages:</span> English, Igbo</pre>
+<pre><span>    Currency:</span> Naira, Kobo</pre>
+<pre><span>   Time Zone:</span> GMT+1</pre>
+<pre><span>Calling Zone:</span> +234</pre>
+<pre><span>Internet LTD:</span> .ng</pre>
+</p>
+</section>
+<section class="right">
+<div class="h2">
+<h2>Weather<span>⛅️</span></h2>
+</div>
+<div class="weather-icon">⛅️</div>
+<p>
+<pre><span>Temperature:</span> 26.9°C</pre>
+<pre><span> Conditions:</span> Dry/Wet Season</pre>
+<pre><span>       Wind:</span> 10 km/h</pre>
+<pre><span> Wind Chill:</span> <span id="wc"></span></pre> 
+</p>
+</section>
+</main>
+<footer>
+<p>&copy;<span id="currentyear"></span> Ugwu Chukwuebuka M.</p>
+<p id="lastModified"></p>
+</footer>
+</body>
+</html>
