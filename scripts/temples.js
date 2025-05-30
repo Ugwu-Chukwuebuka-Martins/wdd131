@@ -70,16 +70,17 @@ const temples = [
 ]
 let images = document.querySelectorAll("img");
 let figcapts = document.querySelectorAll("figcaption");
-for(i=0; i<images.length; i++){
+for(i=0; i<images.length; i++)
+{
 	images.item(i).src = temples[i].imageUrl;
 	let a = document.createElement("h2");
 	let b = document.createElement("p");
 	let c = document.createElement("p");
 	let d = document.createElement("p");
 	a.textContent = temples[i].templeName;
-	b.textContent = "LOCATION: "+temples[i].location;
-	c.textContent = "DEDICATION: "+temples[i].dedicated;
-	d.textContent = "AREA: "+temples[i].area+ "sq ft";
+	b.innerHTML = `<span style="color:green; font-weight: bolder;">LOCATION: </span> ${temples[i].location}`;
+	c.innerHTML = `<span style="color:red; font-weight: bolder;">DEDICATION: </span> ${temples[i].dedicated}`;
+	d.innerHTML = `<span style="color:green; font-weight: bolder;">AREA: </span> ${temples[i].area} sq ft`;
 	figcapts.item(i).appendChild(a);
 	figcapts.item(i).appendChild(b);
 	figcapts.item(i).appendChild(c);
