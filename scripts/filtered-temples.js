@@ -89,21 +89,68 @@ const temples = [
 	  imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/draper-utah-temple/draper-utah-temple-38937-main.jpg"
 	},
 ]
-let images = document.querySelectorAll("img");
-let figcapts = document.querySelectorAll("figcaption");
-for(i=0; i<images.length; i++)
+let div = document.querySelector(".dis"); 
+const old = document.querySelector("#old");
+const new1 = document.querySelector("#new");
+const large = document.querySelector("#large");
+const small = document.querySelector("#small");
+const home = document.querySelector("#home");
+
+createTemple(temples);
+old.addEventListener("click",()=>
 {
-	images.item(i).src = temples[i].imageUrl;
-	let a = document.createElement("h2");
-	let b = document.createElement("p");
-	let c = document.createElement("p");
-	let d = document.createElement("p");
-	a.textContent = temples[i].templeName;
-	b.innerHTML = `<span style="color:green; font-weight: bolder;">LOCATION: </span> ${temples[i].location}`;
-	c.innerHTML = `<span style="color:red; font-weight: bolder;">DEDICATION: </span> ${temples[i].dedicated}`;
-	d.innerHTML = `<span style="color:green; font-weight: bolder;">AREA: </span> ${temples[i].area} sq ft`;
-	figcapts.item(i).appendChild(a);
-	figcapts.item(i).appendChild(b);
-	figcapts.item(i).appendChild(c);
-	figcapts.item(i).appendChild(d);
+div.innerHTML = "";
+createTemple(temples.filter(temple => parseInt(temple.dedicated.charAt(0)+temple.dedicated.charAt(1)+temple.dedicated.charAt(2)+temple.dedicated.charAt(3)) < 1900));
+})
+new1.addEventListener("click",()=>
+{
+div.innerHTML = "";
+createTemple(temples.filter(temple => parseInt(temple.dedicated.charAt(0)+temple.dedicated.charAt(1)+temple.dedicated.charAt(2)+temple.dedicated.charAt(3)) > 2000));
+})
+large.addEventListener("click",()=>
+{
+div.innerHTML = "";
+createTemple(temples.filter(temple => temple.area >90000));
+})
+small.addEventListener("click",()=>
+{
+div.innerHTML = "";
+createTemple(temples.filter(temple => temple.area < 10000));
+})
+home.addEventListener("click",()=>
+{
+div.innerHTML = "";
+createTemple(temples);
+})
+
+
+function createTemple(templeObj)
+{
+templeObj.forEach(temple => {
+let fig = document.createElement("figure");
+let name = document.createElement("h2");
+let locate = document.createElement("p");
+let dedicate = document.createElement("p");
+let area = document.createElement("p");
+let figcapt = document.createElement("figcaption");
+let image = document.createElement("img");
+
+name.textContent = temple.templeName;
+locate.innerHTML = `<span style="color:green; font-weight: bolder;">LOCATION: </span> ${temple.location}`;
+dedicate.innerHTML = `<span style="color:red; font-weight: bolder;">DEDICATED: </span> ${temple.dedicated}`;
+area.innerHTML = `<span style="color:green; font-weight: bolder;">SIZE: </span> ${temple.area}`;
+
+image.setAttribute("src",temple.imageUrl);
+image.setAttribute("alt", temple.templeName);
+image.setAttribute("loading","lazy");
+
+figcapt.appendChild(name);
+figcapt.appendChild(locate);
+figcapt.appendChild(dedicate);
+figcapt.appendChild(area);
+fig.appendChild(figcapt);
+fig.appendChild(image);
+
+div.appendChild(fig);
+});
 }

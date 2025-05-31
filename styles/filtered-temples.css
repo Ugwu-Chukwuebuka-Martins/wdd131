@@ -72,8 +72,10 @@ grid-template-columns: repeat(auto-fit,min-max(200px,1fr));
 justify-content: center;
 align-items: center;
 grid-gap: 2rem;
+padding: 2rem;
 }
 figure{
+width: 95%;
 padding: 1rem;
 background-color: rgb(204, 202, 202);
 border-radius: .5rem;
@@ -99,4 +101,33 @@ background-color: navy;
 color: white;
 padding: 2rem;
 font-family: Tektur;
+}
+@media screen and (min-width: 800px){
+header{
+display: flex;
+justify-content: space-around;
+}
+.navigation{
+display: flex;
+list-style: none;
+justify-content: space-around;
+padding: 2rem;
+font-weight: bolder;
+background-color: navy;
+}
+.navigation li{
+display: inline;
+margin: 0 2rem;
+}
+.navigation a{
+color: white;
+}
+.dis{
+grid-template-columns: repeat(3,1fr);
+justify-content: space-around;
+max-width: 100%;
+}
+#menu{
+display: none;
+}
 }

@@ -20,6 +20,7 @@
     }
     .dis{
     grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
     max-width: 100%;
     }
     #menu{
