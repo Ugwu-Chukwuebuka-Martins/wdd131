@@ -68,7 +68,6 @@ font-size: x-large;
 }
 .dis{
 display: grid;
-grid-template-columns: repeat(auto-fit,min-max(200px,1fr));
 justify-content: center;
 align-items: center;
 grid-gap: 2rem;
