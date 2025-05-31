@@ -8,7 +8,7 @@ let cYear = document.getElementById("currentyear");
 let date = new Date();
 cYear.textContent = date.getFullYear();
 let lModified = document.querySelector("#lastModified");
-const lDate = new Date(2025,4,29);
+const lDate = new Date(2025,4,31);
 lModified.innerText =  lDate;
 const temples = [
 	{
