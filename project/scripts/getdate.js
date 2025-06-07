@@ -1,6 +1,6 @@
-cYear = document.getElementById("currentyear");
-date = new Date();
+let cYear = document.getElementById("currentyear");
+let date = new Date();
 cYear.textContent = date.getFullYear();
-lModified = document.querySelector("#lastModified");
-lDate = new Date(2025,5,7);
+let lModified = document.querySelector("#lastModified");
+let lDate = new Date(2025,5,7);
 lModified.innerText =  lDate;
