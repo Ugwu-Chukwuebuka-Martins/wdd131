@@ -138,7 +138,7 @@ let image = document.createElement("img");
 name.textContent = temple.templeName;
 locate.innerHTML = `<span style="color:green; font-weight: bolder;">LOCATION: </span> ${temple.location}`;
 dedicate.innerHTML = `<span style="color:red; font-weight: bolder;">DEDICATED: </span> ${temple.dedicated}`;
-area.innerHTML = `<span style="color:green; font-weight: bolder;">SIZE: </span> ${temple.area}`;
+area.innerHTML = `<span style="color:green; font-weight: bolder;">SIZE: </span> ${temple.area.toLocaleString()} sq ft`;
 
 image.setAttribute("src",temple.imageUrl);
 image.setAttribute("alt", temple.templeName);

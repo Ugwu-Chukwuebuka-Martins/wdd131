@@ -101,7 +101,7 @@ for(i=0; i<images.length; i++)
 	a.textContent = temples[i].templeName;
 	b.innerHTML = `<span style="color:green; font-weight: bolder;">LOCATION: </span> ${temples[i].location}`;
 	c.innerHTML = `<span style="color:red; font-weight: bolder;">DEDICATION: </span> ${temples[i].dedicated}`;
-	d.innerHTML = `<span style="color:green; font-weight: bolder;">AREA: </span> ${temples[i].area} sq ft`;
+	d.innerHTML = `<span style="color:green; font-weight: bolder;">AREA: </span> ${temples[i].area.toLocaleString()} sq ft`;
 	figcapts.item(i).appendChild(a);
 	figcapts.item(i).appendChild(b);
 	figcapts.item(i).appendChild(c);
