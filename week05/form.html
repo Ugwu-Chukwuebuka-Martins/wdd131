@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="uft-8">
+<meta name="viewport" content="width=device-width;initial-scale=1">
+<title>form</title>
+<meta name="description" content="form">
+<meta name="author" content="Ugwu Chukwuebuka">
+<link rel="stylesheet" href="styles/form.css">
+<script defer src="scripts/form.js"></script>
+</head>
+<body>
+<header>
+<h1>PRODUCT REVIEW</h1>
+</header>
+<main>
+<form method="get" action="review.html">
+<fieldset>
+<legend>Product Name</legend>
+<div class="cent">
+<select name="product" id="product" required>
+<option disabled>Choose / Select a product</option>
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+</select>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Overall Rating</legend>
+<div class="cent">
+<div class="stars">
+<input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+<input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+<input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+<input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+<input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+</div></div>
+</fieldset>
+
+<fieldset>
+<legend>Date of Installation</legend>
+<div class="cent">
+<label for="date"></label>
+<input type="date" id="date" name="date" required>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Useful Features</legend>
+<input type="checkbox" id="expert" name="expert" value="expert"><label for="expert">Expert</label><br>
+<input type="checkbox" id="design" name="design" value="design"><label for="design">Design</label><br>
+<input type="checkbox" id="durability" name="durability" value="durability"><label for="durability">Durability</label><br>
+<input type="checkbox" id="easeofuse" name="easeofuse" value="easeofuse"><label for="easeofuse">Ease Of Use</label>
+</fieldset>
+
+<fieldset>
+<legend>Written Review</legend>
+<div class="cent">
+<label for="writtenreview"></label>
+<textarea id="writtenreview" name="writtenreview"></textarea>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Your Name</legend>  
+<div class="cent">
+<label for="name"></label>
+<input type="text" id="name" name="name">
+</div>
+</fieldset>
+
+<div class="cent">
+<label for="submit"></label>
+<input type="submit" id="submit" name="submit" value="Post Review">
+</div>
+</form>
+</main>
+<footer>
+<p>&copy;<span id="currentyear"></span> 👑Ugwu Chukwuebuka M.👑</p>
+<p id="lastModified"></p>
+</footer>
+</body>
+</html>

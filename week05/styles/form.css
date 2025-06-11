@@ -1,0 +1,93 @@
+body{
+display: grid;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+}
+main{
+background-color: rgb(216, 216, 216);
+}
+header, footer{
+background-color: navy;
+color: white;
+text-align: center;
+padding: 1rem;
+}
+input[type="radio"] {
+display: none;
+position: relative;
+caret-color: rgba(0, 0, 0, 0);
+}
+
+select, input[type="date"], input[type="text"]{
+background-color: white;
+color: black;
+border: .5px solid black;
+text-align: center;
+width: 400px;
+padding: .7rem;
+font-size: large;
+}
+
+textarea{
+width: 90%;
+height: 6rem;
+font-size: x-large;
+}
+
+input[type="submit"]{
+background-color: white;
+color: navy;
+border: .5px solid black;
+text-align: center;
+width: 400px;
+margin: .5rem;
+padding: 1rem;
+font-weight: bolder;
+font-size: x-large;
+}
+
+input[type="submit"]:hover{
+background-color: red;
+color: white;
+}
+
+input[type="checkbox"]{
+width: 2rem;
+height: 1.5rem;
+}
+
+.cent, .stars{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.stars {
+display: flex;
+flex-direction: row-reverse;
+justify-content: left;
+}
+
+.stars > label {
+color: navy;
+width: 30px;
+height: 30px;
+font-size: 2rem;
+margin-left: 5px;
+display: flex;
+align-items: center;
+caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+color: #000;
+}
+
+.stars > label::before {
+content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+content: "\2605";
+}
