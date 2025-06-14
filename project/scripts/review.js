@@ -15,4 +15,4 @@ pName.textContent = detailArray[0];
 pId.textContent = detailArray[1];
 pPri.textContent = detailArray[2];
 img.src = `images/${detailArray[0].toLowerCase()}.png`; 
-alert(`Hi ${detailArray[3]}`)
+alert(`Hi ${detailArray[3].toUpperCase()}, It is all powered by Electricity!`);
