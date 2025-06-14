@@ -24,12 +24,23 @@ justify-content: space-around;
 align-items: center;
 background-color: var(--header-color);
 }
-.toggle h1, figcaption{
+.card{
+display: flex;
+padding: 1rem;
+background-color: var(--header-color);
+}
+.card img{
+margin-right: 2rem;
+}
+h1, figcaption{
 color: white;
 font-weight: bolder;
 }
 main{
 background-color: var(--acccent2);
+}
+.pro{
+display: flex;
 }
 .hide::before{
 content: "≡";
@@ -59,7 +70,52 @@ display: grid;
 justify-content: center;
 align-items: center;
 }
-
+form{
+display: grid;
+justify-content: space-around;
+align-items: center;
+padding: .2rem;
+max-width: 40%;
+margin: 1rem;
+border-radius: 1rem;
+background-color: var(--main-color);
+}
+input[type="text"], select{
+padding: .5rem;
+font-size: medium;
+}
+label{
+font-weight: bolder;
+color: blue;
+font-family: Tektur;
+margin-bottom: -1rem;
+}
+h2{
+font-weight: bolder;
+color: red;
+font-family: Tektur;   
+}
+#detail{
+width: 15rem;
+padding: .7rem;
+margin: .5rem;
+background-color: red;
+border: none;
+border-radius: .5rem;
+color: white;
+font-family: Tektur;
+font-weight: bolder;
+}
+.pduct{
+color: purple;
+font-weight: bolder;
+font-family: Tektur;
+}
+.sw{
+display: grid;
+justify-content: center;
+align-items: center;
+}
 figure{
 max-width: 20rem;
 background-color: var(--main-color);
