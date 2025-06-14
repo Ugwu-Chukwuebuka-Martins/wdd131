@@ -8,6 +8,7 @@ main{
 background-color: rgb(216, 216, 216);
 }
 header, footer{
+font-family: Tektur;
 background-color: navy;
 color: white;
 text-align: center;
